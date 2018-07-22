@@ -1,0 +1,22 @@
+{
+  "name": "fly",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "concurrently": "^3.6.0",
+    "json-graphql-server": "^2.1.1",
+    "react": "^16.4.1",
+    "react-bootstrap": "^0.32.1",
+    "react-dom": "^16.4.1",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "start": "concurrently npm:start-*",
+    "start-graphql": "node_modules/.bin/json-graphql-server db/db.js",
+    "start-server": "PORT=3001 react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
