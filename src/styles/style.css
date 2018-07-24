@@ -16,6 +16,10 @@
     align-items: center;
 }
 
+.badge {
+    margin-bottom: 10px;
+}
+
 .user {
     flex-direction: column;
 }

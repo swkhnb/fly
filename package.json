@@ -30,10 +30,7 @@
   },
   "scripts": {
     "start": "concurrently npm:start-*",
-    "1-start-express-graphql": "node src/graphql-server.js",
-    "-start-graphql": "node_modules/.bin/json-graphql-server db/users.js --p 4000",
     "start-server": "react-scripts start",
-    "1-start-json-server": "node_modules/.bin/json-server --watch db/db.json --port 4000",
     "start-the-graph-ql": "npm run build-graphql-server; npm run serve-graphql-server",
     "build-graphql-server": "babel graphql-server -d dist",
     "serve-graphql-server": "node dist/server.js",
